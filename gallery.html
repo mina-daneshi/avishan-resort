@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>گالری تصاویر - اقامتگاه بومگردی آویشن</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 25px;
+            margin-bottom: 30px;
+        }
+
+        .gallery-card {
+            background: #fffdf9;
+            border: 2px solid #ecd8c2;
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 4px 14px rgba(62, 34, 17, 0.08);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .gallery-card:hover {
+            transform: translateY(-4px);
+            border-color: #c69c6d;
+            box-shadow: 0 8px 22px rgba(62, 34, 17, 0.15);
+        }
+
+        .gallery-card img {
+            width: 100%;
+            height: auto;
+            max-height: 380px;
+            object-fit: contain;
+            display: block;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="menu-body">
+
+    <main class="menu-card-wrapper">
+        <nav class="top-nav">
+            <a href="index.html" class="back-btn">
+                <span>←</span>
+                <span>بازگشت به اقامتگاه</span>
+            </a>
+        </nav>
+
+        <header class="header-content">
+            <div class="plaque-badge">
+                <h1>گالری تصاویر آویشن</h1>
+            </div>
+            <div class="host-contact">
+                <span class="host-label">نگاهی به گوشه‌وکنار بوم‌گردی  آویشن و رستوران گرگینو</span>
+            </div>
+        </header>
+
+        <!-- گالری تصاویر جدید -->
+        <div class="gallery-grid">
+            <div class="gallery-card">
+                <img src="fas.jpg" alt="تصویر اقامتگاه">
+            </div>
+
+            <div class="gallery-card">
+                <img src="light.jpg" alt="تصویر اقامتگاه">
+            </div>
+
+            <div class="gallery-card">
+                <img src="oli.jpg" alt="تصویر اقامتگاه">
+            </div>
+
+            <div class="gallery-card">
+                <img src="req.jpg" alt="تصویر اقامتگاه">
+            </div>
+
+            <div class="gallery-card">
+                <img src="taq.jpg" alt="تصویر اقامتگاه">
+            </div>
+
+            <div class="gallery-card">
+                <img src="tas.jpg" alt="تصویر اقامتگاه">
+            </div>
+
+            <div class="gallery-card">
+                <img src="toii.jpg" alt="تصویر اقامتگاه">
+            </div>
+        </div>
+
+        <footer class="menu-footer">
+            <p class="blessing-text">آرزومند لحظاتی خوش و پرآرامش در اقامتگاه آویشن</p>
+        </footer>
+    </main>
+
+</body>
+</html>

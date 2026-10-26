@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>درخواست رزرو اقامتگاه - بومگردی آویشن</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="menu-body">
+
+    <main class="menu-card-wrapper">
+        <nav class="top-nav">
+            <a href="index.html" class="back-btn">
+                <span>←</span>
+                <span>بازگشت به صفحه اصلی</span>
+            </a>
+        </nav>
+
+        <header class="header-content">
+            <div class="plaque-badge">
+                <h1>رزرو اقامتگاه آویشن</h1>
+            </div>
+            <div class="host-contact">
+                <span class="host-label">هماهنگی مستقیم با میزبان اقامتگاه</span>
+                <a href="tel:09136324065" class="phone-badge">۰۹۱۳۶۳۲۴۰۶۵</a>
+            </div>
+        </header>
+
+        <div class="reserve-box">
+            <p class="reserve-intro">
+                لطفاً مشخصات و زمان اقامت خود را در فرم زیر وارد کنید. پس از ثبت، میزبان اقامتگاه جهت تایید قطعی با شما تماس خواهد گرفت.
+            </p>
+
+            <form action="save_reservation.php" method="POST" class="reserve-form">
+                <div class="form-grid">
+                    <div>
+                        <label for="fullname">نام و نام خانوادگی *</label>
+                        <input type="text" id="fullname" name="fullname" required placeholder="مثال: رضا محمدی">
+                    </div>
+
+                    <div>
+                        <label for="phone">شماره همراه *</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="۰۹۱۳..." dir="ltr">
+                    </div>
+
+                    <div>
+                        <label for="check_in">تاریخ ورود *</label>
+                        <input type="date" id="check_in" name="check_in" required>
+                    </div>
+
+                    <div>
+                        <label for="stay_duration">مدت اقامت (تعداد شب) *</label>
+                        <select id="stay_duration" name="stay_duration">
+                            <option value="1">۱ شب</option>
+                            <option value="2">۲ شب</option>
+                            <option value="3">۳ شب</option>
+                            <option value="4">۴ شب</option>
+                            <option value="5_plus">۵ شب یا بیشتر</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="room_count">تعداد اتاق مورد نیاز *</label>
+                        <select id="room_count" name="room_count">
+                            <option value="1">۱ اتاق</option>
+                            <option value="2">۲ اتاق</option>
+                            <option value="3">۳ اتاق</option>
+                            <option value="all">دربست کامل اقامتگاه</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="guests_count">تعداد کل نفرات *</label>
+                        <input type="number" id="guests_count" name="guests_count" min="1" max="30" value="2" required>
+                    </div>
+
+                    <div class="form-group-full">
+                        <label for="notes">درخواست‌ها یا توضیحات بیشتر (اختیاری)</label>
+                        <textarea id="notes" name="notes" rows="3" placeholder="ساعت تقریبی رسیدن، نیاز به وعده غذایی یا رختخواب اضافه..."></textarea>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-reserve-btn">ثبت و ارسال درخواست رزرو</button>
+            </form>
+        </div>
+
+        <footer class="menu-footer">
+            <p class="blessing-text">پیشاپیش اقامت خوشی را در روستای زیبای گرگینو برایتان آرزومندیم</p>
+        </footer>
+    </main>
+
+</body>
+</html>
